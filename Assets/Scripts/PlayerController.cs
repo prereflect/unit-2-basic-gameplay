@@ -32,5 +32,10 @@ public class PlayerController : MonoBehaviour
 
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(horizontalInput * speed * Time.deltaTime * Vector3.right);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //Launch a projectile from the player
+        }
     }
 }
